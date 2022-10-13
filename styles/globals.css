@@ -62,7 +62,7 @@ a {
   to { transform: translateX(-50%); }
 }
 
- span.text-red {
+span.text-red {
     -webkit-text-stroke: 1px #f02d34;
     margin-left: 6px;
 }
@@ -428,8 +428,7 @@ padding: 30px 65px;
 
 .product-detail-image{
   border-radius: 15px;
-   background-color: #ebebeb;
-
+  background-color: #ebebeb;
   width: 400px;
   height: 400px;
   cursor: pointer;
