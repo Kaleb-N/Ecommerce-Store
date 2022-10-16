@@ -22,8 +22,9 @@ const ProductDetails = ({ product, products }) => {
                 <div className="small-images-container">
                     {image?.map((item, i) => (
                         <img 
+                            key={i}
                             src={urlFor(item)}
-                            className={i == index ? 'small-image selected-image' : 'small-image'}
+                            className={i === index ? 'small-image selected-image' : 'small-image'}
                             // set another product on mouse enter or hover
                             onMouseEnter={() => setIndex(i)}
                         />
@@ -108,4 +109,4 @@ export const getStaticProps = async ({ params: { slug }}) => {
     }
 }
 
-export default ProductDetails
+export default ProductDetails;
